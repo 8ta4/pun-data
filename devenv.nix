@@ -56,6 +56,7 @@
       # https://github.com/pre-commit/pre-commit-hooks/blob/6db05e22aa7546f11ebde806dbf6fbf5985de07c/.pre-commit-hooks.yaml#L205-L212
       entry = "${pkgs.python3Packages.pre-commit-hooks}/bin/trailing-whitespace-fixer";
       types = [ "text" ];
+      excludes = [ "vocabulary.txt" ];
     };
   };
 
